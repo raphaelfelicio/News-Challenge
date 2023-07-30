@@ -1,5 +1,5 @@
 {
-    "mockApiResponse": {
+    "mockData": {
         "response": {
             "status": "ok",
             "userTier": "developer",

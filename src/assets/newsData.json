@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "webTitle": "News Story 1",
+        "thumbnail": "News story 1 image",
+        "category": "News story category 1"
+    },
+    {
+        "id": "2",
+        "webTitle": "News Story 2",
+        "thumbnail": "News story 2 image",
+        "category": "News story category 2"
+    },
+    {
+        "id": "3",
+        "webTitle": "News Story 3",
+        "thumbnail": "News story 3 image",
+        "category": "News story category 3"
+    },
+    {
+        "id": "4",
+        "webTitle": "News Story 4",
+        "thumbnail": "News story 4 image",
+        "category": "News story category 4"
+    },
+    {
+        "id": "5",
+        "webTitle": "News Story 5",
+        "thumbnail": "News story 5 image",
+        "category": "News story category 5"
+    }
+]

@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+// import NewsStories from "./Components/NewsStories";
+import Footer from "./Components/Footer";
+import NewsSummary from "./Components/NewsSummary";
+import Header from "./Components/header";
+import { getNews } from './utils/newsDataService';
+import { useEffect, useState } from "react";
+function App()
+{
+  const [newsStories, setNews] = useState([]);
+
+  const getData = async () =>
+  {
+    const data = await getNews()
+    if (data instanceof Error)
+    {
+      setNews([]);
+    } else
+    {
+      setNews(data.response.results);
+    }
+  }
+  useEffect(() =>
+  {
+    getData();
+  }, []);
+
 
   return (
     <>
+      <Header />
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <NewsSummary newsStories={newsStories} />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Footer />
     </>
   )
+
 }
 
 export default App

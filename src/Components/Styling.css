@@ -1,0 +1,38 @@
+.header-container {
+    background-color: blue;
+    color: white;
+    padding: 20px 0;
+    border-bottom: 4px solid white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+}
+
+.footer-container {
+    background-color: blue;
+    color: white;
+    padding: 30px 10px;
+    border-bottom: 4px solid white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+
+}
+
+.Article-container {
+    background-color: blue;
+    color: white;
+    padding: 30px 10px;
+    border-bottom: 4px solid white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.container {
+    background-color: darkblue;
+    color: white;
+    padding: 30px 25px;
+    border-bottom: 4px solid white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+
+}
